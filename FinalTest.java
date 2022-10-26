@@ -7,8 +7,18 @@ public class FinalTest {
         int[] numsOfMedia = getNumsOfMedia(totalNum);
         String typeOfMedia = getTypeOfMedia();
         if (Objects.equals(typeOfMedia, "ARITMETICA")) {
+            System.out.println("Os numeros digitados foram:");
+            for (int num : numsOfMedia) {
+                System.out.print(num + "; ");
+            }
+            System.out.println("\nA media escolhida foi a " + typeOfMedia);
             System.out.println("A media é igual a: " + calculateArithmeticMedia(numsOfMedia, totalNum));
         } else if (Objects.equals(typeOfMedia, "HARMONICA")) {
+            System.out.println("Os numeros digitados foram:");
+            for (int num : numsOfMedia) {
+                System.out.print(num + "; ");
+            }
+            System.out.println("\nA media escolhida foi a " + typeOfMedia);
             System.out.println("A media é igual a: " + calculateHarmonicaMedia(numsOfMedia, totalNum));
         } else {
             System.out.println("Ocorreu um erro inesperado, por favor insira os valores novamente!");
